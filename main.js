@@ -20,6 +20,11 @@ function addMemeDiv() {
   newDiv.appendChild(lowerTextElement);
 
   container.appendChild(newDiv);
+
+  //clear form
+  document.getElementById('upper').value = '';
+  document.getElementById('lower').value = '';
+  document.getElementById('photo').value = '';
 }
 
 function addBtnListener() {

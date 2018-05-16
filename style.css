@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: lightgray;
+}
+
+form p {
+  padding: 5px;
+}
+
+#memes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.meme-div {
+  padding: 5px;
+}
+
+.meme-text {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+.upper-text {
+  top: 75px;
+}
+
+.lower-text {
+  bottom: 75px;
+}
+
+.meme-image {
+  width: 100%;
+  max-width: 600px;
+}

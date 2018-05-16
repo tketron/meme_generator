@@ -3,9 +3,6 @@ function removeMemeDiv() {
   const parentDiv = targetDiv.parentNode;
   console.log(targetDiv.parentNode);
   parentDiv.parentNode.removeChild(parentDiv);
-  // let container = document.getElementById('memes');
-
-  // container.removeChild(targetDiv);
 }
 
 function addMemeDiv() {
@@ -24,18 +21,22 @@ function addMemeDiv() {
   const photoElement = document.createElement('img');
   photoElement.setAttribute('src', photo);
 
+  newDiv.classList.add('meme-div');
+  photoElement.classList.add('meme-image');
+  upperTextElement.classList.add('meme-text');
+  upperTextElement.classList.add('upper-text');
+  lowerTextElement.classList.add('meme-text');
+  lowerTextElement.classList.add('lower-text');
+
   //create elements and append to newdiv
   newDiv.appendChild(upperTextElement);
   newDiv.appendChild(photoElement);
   newDiv.appendChild(lowerTextElement);
 
-  container.appendChild(newDiv);
+  // container.appendChild(newDiv);
+  container.prepend(newDiv);
 
   newDiv.addEventListener('click', removeMemeDiv);
-  // newDiv.addEventListener('click', function() {
-  //   removeMemeDiv();
-  //   // console.log(event.target);
-  // });
 
   //clear form
   document.getElementById('upper').value = '';
@@ -50,5 +51,4 @@ function addBtnListener() {
 
 document.addEventListener('DOMContentLoaded', function() {
   addBtnListener();
-  // document.getElementById('memes').addEventListener('click', removeMemeDiv);
 });

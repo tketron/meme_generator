@@ -11,31 +11,39 @@
     <title>MemeR</title>
 </head>
 
-<body>
-    <header>
-        <form>
-            <p>
-                <label for="photo">Background Photo: </label>
-                <input type="text" name="photo" id="photo">
-            </p>
+<body class="container-fluid">
+    <header class="row">
+        <div class="col-10">
+            <form class="form-group">
+                <div class="form-group">
+                    <p>
+                        <label for="photo">Background: </label>
+                        <input type="text" class="form-control" name="photo" id="photo" placeholder="Put a link to an image here">
+                    </p>
+                </div>
 
-            <p>
-                <label for="upper">Upper Text: </label>
-                <input type="text" name="upper" id="upper">
-            </p>
+                <div class="form-group">
+                    <p>
+                        <label for="upper">Upper Text: </label>
+                        <input type="text" class="form-control" name="upper" id="upper" placeholder="Put text for the upper part of the meme here (optional)">
+                    </p>
+                </div>
 
-            <p>
-                <label for="lower">Lower Text: </label>
-                <input type="text" name="lower" id="lower">
-            </p>
+                <div class="form-group">
+                    <p>
+                        <label for="lower">Lower Text: </label>
+                        <input type="text" class="form-control" name="lower" id="lower" placeholder="Put text for the lower part of the meme here (optional)">
+                    </p>
+                </div>
 
-            <p>
-                <input type="button" id="memeBtn" value="Meme It!"></input>
-            </p>
-        </form>
+                <p>
+                    <input type="button" class="btn btn-primary" id="memeBtn" value="Meme It!"></input>
+                </p>
+            </form>
+        </div>
     </header>
 
-    <section id="memes">
+    <section class="row" id="memes">
         <div class="meme-div">
             <p class="meme-text upper-text">Test Text...</p>
             <img src="https://icdn2.digitaltrends.com/image/kermit-the-frog-720x720.jpg" class="meme-image">

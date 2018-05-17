@@ -20,6 +20,10 @@ form p {
   padding: 5px;
 }
 
+.meme-div:hover {
+  opacity: 0.5;
+}
+
 .meme-text {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 50px;
